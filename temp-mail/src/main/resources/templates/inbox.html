@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Временная почта</h1>
+<div th:each="email : ${emails}">
+    <p><strong>От:</strong> <span th:text="${email.from[0]}"></span></p>
+    <p><strong>Тема:</strong> <span th:text="${email.subject}"></span></p>
+</div>
+</body>
+</html>
